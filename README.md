@@ -1,4 +1,4 @@
-# Reproduction code for *Exploratory Experiments*
+# Reproduction code for *Demonstration Experiments*
 
 Minimal code to reproduce the simulation figures and table in the paper.
 Each Section-5 output traces back to a single script in this folder.
@@ -101,5 +101,3 @@ of the same name to update the PDF.
 - The Overleaf `type1_error_table.tex` was originally hand-typed; this
   repo regenerates it byte-equivalent from the CSV via `make_type1_table.py`,
   so values stay in sync with the simulation.
-# DemonstrationExperimentsPaper
-# DemonstrationExperimentsPaper
