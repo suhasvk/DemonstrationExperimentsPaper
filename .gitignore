@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+outputs/csvs/*
+outputs/figures/*
+outputs/tables/*
+outputs/null_runs/
+outputs/run_log*.txt
+outputs/*.log
+outputs/q0_sweep.txt
+!outputs/csvs/.gitkeep
+!outputs/figures/.gitkeep
+!outputs/tables/.gitkeep

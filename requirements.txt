@@ -1,0 +1,16 @@
+# Tested with Python 3.13.6.
+#
+# Install into a fresh venv:
+#     python -m venv .venv
+#     source .venv/bin/activate
+#     pip install -r requirements.txt
+#
+# Then `python run_all.py` regenerates all paper figures and tables.
+
+numpy==2.3.5
+pandas==2.3.3
+matplotlib==3.10.7
+seaborn==0.13.2
+scipy==1.16.3
+numba==0.62.1
+tqdm==4.67.1
