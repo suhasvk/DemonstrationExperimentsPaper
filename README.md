@@ -75,29 +75,4 @@ python make_paper_figures.py
 python make_type1_table.py
 ```
 
-All four study scripts accept `--quick` and `--seed N` flags.
 
-After all five commands finish, `outputs/figures/` contains:
-
-- `spike_power_combined.png` (Figure 3, single-spike power)
-- `multiscale_power_combined.png` (Figure 2, multi-scale power)
-- `uct_power_curves.png` (Figure 4)
-- `uct_allocation_paths.png` (appendix figure)
-- per-study heatmaps and per-statistic power plots (auxiliary)
-
-`outputs/csvs/` holds the raw per-cell rejection rates.
-`outputs/tables/type1_error_table.tex` is the paper's Table 1 rendered
-directly from `type_i_error_results.csv`; copy it over the Overleaf file
-of the same name to update the PDF.
-
-## Notes on reproducibility
-
-- All four studies fix `np.random.seed(42)` at construction. Numerical
-  parity with the submitted PDF additionally requires the same NumPy and
-  Numba versions; small drift is possible across major releases of either.
-- The multi-scale study uses `μ_g = δ·g`, `σ²_g = g³` (cubic variance,
-  matching the paper). Earlier drafts had `σ_g = g²`; the script reflects
-  the current paper.
-- The Overleaf `type1_error_table.tex` was originally hand-typed; this
-  repo regenerates it byte-equivalent from the CSV via `make_type1_table.py`,
-  so values stay in sync with the simulation.
